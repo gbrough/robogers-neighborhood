@@ -47,7 +47,7 @@
 //build/test logic
 //fix bugs
   - input has no contraints, how to we account for large numbers such as 9999 not defined in the array
-  - Should array be numbers or string, if numbers, should it be converted to strings?
+  - Array stored as strings. Should it be stored as numbers and convered to stings to use include method.
 
 
 
