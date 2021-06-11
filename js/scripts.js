@@ -1,19 +1,20 @@
-const numberArray = [0,1,2,3,4];
+const numberArray = [0,1,2,3];
+const newArray = []
 
-function getRoboMessage() {
-  numberArray.forEach(function(element) {
-    roboMessage = console.log(element)
-  });
-  return roboMessage;  
+function getRoboMessage(numberinput) {
+  for (i = 0; i < numberArray.length; i++) {
+    newArray.push(numberArray[i])
+  }
+   return newArray; 
 }
-getRoboMessage()
+getRoboMessage(2);
 
 
 $(document).ready(function () {
   $('form').submit(function (event) {
     event.preventDefault()
     const numberinput = parseInt($("input#numberinput").val());
-    const roboMessage = getRoboMessage(numberinput)
-    $(".output").text(roboMessage);
+    const newArray = getRoboMessage(numberinput)
+    $(".output").text(newArray);
   })
 })
