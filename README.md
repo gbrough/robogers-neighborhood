@@ -42,14 +42,6 @@
     <li><a href="https://www.linkedin.com/in/gbroughton/">Add Me on LinkedIn</a></li>
   </ol>
 
-//design/build form
-//write as many tests as possible
-//build/test logic
-//fix bugs
-  - input has no contraints, how to we account for large numbers such as 9999 not defined in the array
-  - Array stored as strings. Should it be stored as numbers and convered to stings to use include method.
-
-
 
 ```
 Describe: roboMessage()
