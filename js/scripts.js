@@ -1,9 +1,18 @@
+
+
+
+
+
+
+
+
+
 $(document).ready(function(){
-  $("form#number-counter").submit(function(event){
+  $("form#number-message").submit(function(event){
     event.preventDefault();
-    const passage = $("#number-passage").val();
-
-    $("#total-count").html(wordCount);
-
+    const numberentry = $("#number-input").val();
+    const messageAnswer = wordCounter(numberentry);
+    const numberWord = numberWordConverter(word, numberentry);
+    $("#number-result").html(messageAnswer);
   });
 });
