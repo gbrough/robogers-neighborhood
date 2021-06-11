@@ -46,7 +46,8 @@
 //write as many tests as possible
 //build/test logic
 //fix bugs
-  - input has no contraints
+  - input has no contraints, how to we account for large numbers such as 9999 not defined in the array
+  - Should array be numbers or string, if numbers, should it be converted to strings?
 
 
 
