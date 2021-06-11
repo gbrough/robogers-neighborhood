@@ -48,6 +48,9 @@
 //fix bugs
   - input has no contraints
 
+
+
+```
 Describe: roboMessage()
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Expect:(roboMessage(0).toEqual([0]);
@@ -56,7 +59,6 @@ Describe: roboMessage()
 Test: "It should return an array with number up to the number entered"
 Code: "Use push method to push loop results to new array, the output new array
 Expect:(roboMessage(5).toEqual([0,1,2,3,4,5]);
-
 
 Describe: roboMessage()
 Test: 'If number in array is 1 return "Beep!"'

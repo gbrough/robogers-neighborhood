@@ -5,17 +5,16 @@ function getRoboMessage(numberinput) {
   for (i = 0; i < numberArray.length; i++) {
     if (numberArray[i].includes("3")) {
     newArray.push("Won't you be my neighbor?")
-  } else if (numberArray[i].includes("2")) {
+    } else if (numberArray[i].includes("2")) {
     newArray.push("Boop!")
-  } else if (numberArray[i].includes("1")) {
+    } else if (numberArray[i].includes("1")) {
     newArray.push("Beep!")
-  } else {
+    } else {
      newArray.push(numberArray[i])
-  }
+    }
   }
   return newArray.slice(0,numberinput+1);
 }
-
 
 $(document).ready(function () {
   $('form').submit(function (event) {
