@@ -10,10 +10,10 @@ function getRoboMessage(numberinput) {
   } else if (numberArray[i].includes("1")) {
     newArray.push("Beep!")
   } else {
-    newArray.push(numberArray[i])
+     newArray.push(numberArray[i])
   }
   }
-  return newArray;
+  return newArray.slice(0,numberinput+1);
 }
 
 

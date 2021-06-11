@@ -46,9 +46,7 @@
 //write as many tests as possible
 //build/test logic
 //fix bugs
-  - not stopping once it hits result
-  - appends after every submit
-  - array has not limits
+  - input has no contraints
 
 Describe: roboMessage()
 Test: "It should return an array with a 0 if the number 0 is inputted"
