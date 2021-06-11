@@ -65,3 +65,11 @@ Expect:(roboMessage(1).toEqual([0,"Beep!","Boop!"]);
 Describe: roboMessage()
 Test: 'If number in array is 3 "Won't you be my neighbor?"'
 Expect:(roboMessage(1).toEqual([0,"Beep!","Boop!","Won't you be my neighbor?"]);
+
+Describe: roboMessage()
+Test: 'If number has 1 and 3 return "Won't you be my neighbor?"'
+Expect:(roboMessage(13).toEqual([0,"Beep!", ... ,"Won't you be my neighbor?"]);
+
+Describe: roboMessage()
+Test: 'If number has 2 and 1 return "Boop!"'
+Expect:(roboMessage(21).toEqual([0,"Beep!", ... ,"Boop!"];
