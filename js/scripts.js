@@ -1,18 +1,22 @@
+function getRoboMessage(numberinput) {
+  let roboMessage = "something"
 
+  if (numberinput = 0) {
+    roboMessage = "hello"
+  } else if (numberinput = 1) {
+    roboMessage = 'world'
+  } else {
+    roboMessage = "not today"
+  }
+  return roboMessage;
+}
 
+$(document).ready(function () {
+  $('form').submit(function (event) {
+    event.preventDefault()
+    const numberinput = parseInt($("input#number-input").val());
+    const roboMessage = getRoboMessage(numberinput)
 
-
-
-
-
-
-
-$(document).ready(function(){
-  $("form#number-message").submit(function(event){
-    event.preventDefault();
-    const numberentry = $("#number-input").val();
-    const messageAnswer = wordCounter(numberentry);
-    const numberWord = numberWordConverter(word, numberentry);
-    $("#number-result").html(messageAnswer);
-  });
-});
+    $(".output").text(output);
+  })
+})
