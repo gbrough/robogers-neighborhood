@@ -46,6 +46,22 @@
 //write as many tests as possible
 //build/test logic
 
-Describe: beepBoop()
+Describe: roboMessage()
 Test: "It should return an array with a 0 if the number 0 is inputted"
-Expect(beepBoop(0).toEqual([0]);
+Expect:(roboMessage(0).toEqual([0]);
+
+Describe: roboMessage()
+Test: "It should return an array with number up to the number entered"
+Expect:(roboMessage(5).toEqual([0,1,2,3,4,5]);
+
+Describe: roboMessage()
+Test: 'If number in array is 1 return "Beep!"'
+Expect:(roboMessage(1).toEqual([0,"Beep!"]);
+
+Describe: roboMessage()
+Test: 'If number in array is 2 return "Boop!"'
+Expect:(roboMessage(1).toEqual([0,"Beep!","Boop!"]);
+
+Describe: roboMessage()
+Test: 'If number in array is 3 "Won't you be my neighbor?"'
+Expect:(roboMessage(1).toEqual([0,"Beep!","Boop!","Won't you be my neighbor?"]);

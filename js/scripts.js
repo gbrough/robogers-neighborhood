@@ -1,12 +1,12 @@
 function getRoboMessage(numberinput) {
-  let roboMessage = "something"
+  let roboMessage = ""
 
-  if (numberinput = 0) {
-    roboMessage = "hello"
-  } else if (numberinput = 1) {
-    roboMessage = 'world'
+  if (numberinput === 1) {
+    roboMessage = "Beep"
+  } else if (numberinput === 2) {
+    roboMessage = "Boop"
   } else {
-    roboMessage = "not today"
+    roboMessage = "Won't you be my neighbor?"
   }
   return roboMessage;
 }
@@ -14,9 +14,9 @@ function getRoboMessage(numberinput) {
 $(document).ready(function () {
   $('form').submit(function (event) {
     event.preventDefault()
-    const numberinput = parseInt($("input#number-input").val());
+    const numberinput = parseInt($("input#numberinput").val());
     const roboMessage = getRoboMessage(numberinput)
 
-    $(".output").text(output);
+    $(".output").text(roboMessage);
   })
 })
