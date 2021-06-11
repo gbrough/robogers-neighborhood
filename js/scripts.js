@@ -1,18 +1,18 @@
-const numberArray = [0,1,2,3,4,5,6,7,8,9];
+const numberArray = [0,1,2,3,4];
 
 
 function getRoboMessage(numberinput) {
-  numberArray.forEach(function(element) {
-  if (numberinput === 1) {
-    roboMessage = "Beep!"
-  } else if (numberinput === 2) {
-    roboMessage = "Boop!"
-  } else if (numberinput === 3) {
-    roboMessage = "Won't you be my neighbor?"
-  } else {
-    roboMessage = numberinput
+  for (let i = 0; i < numberArray.length; i++) {  
+    if (i === 1) {
+      roboMessage = "Beep!"
+    } else if (i === 2) {
+      roboMessage = "Boop!"
+    } else if (i === 3) {
+      roboMessage = "Won't you be my neighbor?"
+    } else {
+      roboMessage = console.log(i)
+    }
   }
-  });
   return roboMessage;  
 }
 getRoboMessage()
