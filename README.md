@@ -87,8 +87,4 @@ Test: 'Return results up to current position"'
 Code: "Use splice method to return results up to number input"
 Expect:(roboMessage(13).toEqual([0,"Beep!", ... ,"Won't you be my neighbor?"]);
 
-<!-- 
-  reset/replace array, instead of push
-      -- when submit button, set to empty
 
--->
